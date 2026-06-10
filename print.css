@@ -1,0 +1,702 @@
+/* ============================================================
+   RoleModel Software — Print Stylesheet
+   Designed for rolemodelsoftware.com (Framer-generated)
+   Published Jun 4, 2026
+   ============================================================ */
+
+@media print {
+
+  /* ── Page Setup ─────────────────────────────────────────── */
+  @page {
+    margin: 0.75in 0.65in;
+    size: letter portrait;
+  }
+
+  @page :first {
+    margin-top: 0.5in;
+  }
+
+
+  /* ── Reset / Base ───────────────────────────────────────── */
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    background-image: none !important;
+    background-color: transparent !important;
+    color: #111 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  html,
+  body {
+    width: 100% !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif !important;
+  }
+
+  #main {
+    min-height: unset !important;
+  }
+
+
+  /* ── Hide Entirely ──────────────────────────────────────── */
+
+  /* Navigation (fixed top bar + all variants) */
+  .framer-m1hrbc-container,
+  .framer-c6hwu,
+  .framer-szb64,
+  .framer-aW1Uj,
+  nav,
+  [data-framer-name="Navbar__Inner"],
+  [data-framer-name="Navbar__Start"],
+  [data-framer-name="Navbar__Center"],
+  [data-framer-name="Navbar__End"] {
+    display: none !important;
+  }
+
+  /* Partner ticker bar */
+  .framer-pd64zc,
+  .framer-p6kj61-container,
+  .framer-115uftj {
+    display: none !important;
+  }
+
+  /* Video backgrounds, canvases, iframes */
+  video,
+  canvas,
+  iframe {
+    display: none !important;
+  }
+
+  /* Scroll indicators */
+  .framer-dy6uv6-container,
+  .framer-9bx8xo-container {
+    display: none !important;
+  }
+
+  /* Gradient overlays / fade layers */
+  .framer-1dqljgb-container,
+  .framer-1bnsk33-container,
+  .framer-zx5kof-container,
+  .framer-wn6xg7-container {
+    display: none !important;
+  }
+
+  /* Animated particle / dot grid background containers */
+  .framer-iexylb-container,
+  .framer-nbhyun-container canvas,
+  .framer-24hvdt-container canvas,
+  .framer-143xghu-container canvas {
+    display: none !important;
+  }
+
+  /* Spectrum / rainbow bar at footer transition */
+  .framer-1hhlf6u-container {
+    display: none !important;
+  }
+
+  /* Mega-menu dropdowns */
+  .framer-2mm1m2-container {
+    display: none !important;
+  }
+
+  /* AI guide book cover image stack (decorative) */
+  .framer-1g2plf7,
+  .framer-70d39d,
+  .framer-bnsxmu {
+    display: none !important;
+  }
+
+  /* Clutch review widget */
+  .framer-vq92mq-container {
+    display: none !important;
+  }
+
+  /* Case-study card arrow icons */
+  .framer-qaj315,
+  .framer-BSM5e {
+    display: none !important;
+  }
+
+  /* Testimonial play button + background slide image */
+  .framer-q9qg6y-container button,
+  .framer-q9qg6y-container [aria-label="Fading slideshow"],
+  .framer-q9qg6y-container [style*="position:absolute"] {
+    display: none !important;
+  }
+
+  /* Framer SVG icon masks (nav icons, etc.) */
+  .framer-yW6uK,
+  .framer-zOJx5,
+  .framer-3aae6,
+  .framer-HqhfY,
+  .framer-27ynY,
+  .framer-n66Hy,
+  .framer-O7k8P,
+  .framer-vHkrp {
+    display: none !important;
+  }
+
+  /* Social icons in footer */
+  .framer-1fr4fx,
+  .framer-q5or7o-container,
+  .framer-jquf9a-container,
+  .framer-1t7epvn-container,
+  .framer-tnmy6w-container,
+  .framer-kk52h8-container {
+    display: none !important;
+  }
+
+  /* Footer nav chevrons */
+  .framer-iv2aym,
+  .framer-1o1nc4d {
+    display: none !important;
+  }
+
+  /* Yellow bracket accents in hero "[" and "]" */
+  .framer-1rwrwap p,
+  .framer-1xku8tz p {
+    display: none !important;
+  }
+
+  /* Partner/client logo ticker */
+  [aria-label="Scroll-controlled ticker"],
+  [role="marquee"] {
+    display: none !important;
+  }
+
+  /* Clip-path reveal hover overlays */
+  [style*="clip-path: circle(0%"] {
+    display: none !important;
+  }
+
+  /* Highlight / ripple click-effect overlays */
+  [data-highlight] > div[style*="clip-path"] {
+    display: none !important;
+  }
+
+  /* Hide all SSR duplicate breakpoint variants after the first */
+  .ssr-variant + .ssr-variant {
+    display: none !important;
+  }
+
+  /* Stat decorative SVG tick marks */
+  .framer-5ma6wt,
+  .framer-q01dgo,
+  .framer-1wwtmjn,
+  .framer-1lvwrmq,
+  .framer-pyhcsv,
+  .framer-xi0jac,
+  .framer-nndy0n,
+  .framer-1b7elzv,
+  .framer-14tinvl,
+  .framer-1ebkvi,
+  .framer-bo6g8r,
+  .framer-14rh4ba,
+  .framer-o3dx2g,
+  .framer-5oo3jw,
+  .framer-1ei9vtu,
+  .framer-53rtho,
+  .framer-1cwl2sy,
+  .framer-6os2y0,
+  .framer-rntcch {
+    display: none !important;
+  }
+
+
+  /* ── Scroll-driven sticky panels — flatten to static ───── */
+  .framer-nbhyun-container,
+  .framer-24hvdt-container,
+  .framer-143xghu-container {
+    position: static !important;
+    height: auto !important;
+  }
+
+  /* Overflow / clip wrappers that hide content during scroll */
+  .framer-Bftao,
+  .framer-KDyd1,
+  .framer-xdvjbp {
+    overflow: visible !important;
+  }
+
+  /* Dot-grid background on hero header */
+  .framer-auBVu,
+  [style*="radial-gradient(circle, rgba(255,255,255,0.15)"] {
+    background-image: none !important;
+  }
+
+  /* Background image wrappers inside testimonial / cards */
+  [data-framer-background-image-wrapper="true"] {
+    display: none !important;
+  }
+
+
+  /* ── Layout: full-width, static, auto-height ────────────── */
+  .framer-Bftao,
+  .framer-KDyd1,
+  .framer-auBVu,
+  .framer-Z15Fd,
+  .framer-RWRvI,
+  .framer-d05kF,
+  .framer-O2xTs,
+  .framer-FgykB,
+  [class*="framer-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: unset !important;
+    left: unset !important;
+    right: unset !important;
+    transform: none !important;
+    will-change: auto !important;
+    position: static !important;
+    display: block !important;
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  /* Restore flex for primary layout containers */
+  .framer-3mtdwx,
+  .framer-1k9ar2r,
+  .framer-ont0by,
+  .framer-1g715hg,
+  .framer-90nez1,
+  .framer-20sx8z,
+  .framer-ishqje {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8pt !important;
+  }
+
+  /* Stats row: 4-up horizontal grid */
+  .framer-O2xTs .framer-100y4qm {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 12pt !important;
+  }
+
+  /* Footer sitemap: 3-column grid */
+  .framer-FgykB .framer-90nez1 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 16pt !important;
+    align-items: start !important;
+  }
+
+  /* Footer bottom bar */
+  .framer-g2wwkj {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    gap: 6pt !important;
+    border-top: 1pt solid #ddd !important;
+    padding-top: 8pt !important;
+    margin-top: 12pt !important;
+  }
+
+
+  /* ── Typography ─────────────────────────────────────────── */
+  h1, h2, h3, h4, h5, h6,
+  .framer-text,
+  p, li, span {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+  }
+
+  /* Flatten all gradient text fills to solid */
+  [data-text-fill],
+  span[style*="-webkit-text-fill-color"],
+  [style*="background-clip: text"],
+  [style*="-webkit-background-clip: text"] {
+    -webkit-text-fill-color: #111 !important;
+    background: none !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+    color: #111 !important;
+  }
+
+  /* Remove doodle underline masks */
+  [style*="mask-image"],
+  [style*="-webkit-mask-image"] {
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    background: none !important;
+  }
+
+  /* Hero headline */
+  .framer-8mmmkf-container span,
+  .framer-ue74oz-container span,
+  .framer-2em3nr-container span {
+    font-size: 28pt !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    background-image: none !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+  }
+
+  /* Section heading (H2) */
+  h2.framer-text,
+  .framer-hqjum6,
+  .framer-hqjum6 h2 {
+    font-size: 22pt !important;
+    line-height: 1.2 !important;
+    color: #111 !important;
+    page-break-after: avoid;
+  }
+
+  /* Section subheading (H3) */
+  h3.framer-text,
+  .framer-16l113y h3 {
+    font-size: 16pt !important;
+    line-height: 1.25 !important;
+    page-break-after: avoid;
+  }
+
+  /* Body paragraphs */
+  .framer-193b61g p,
+  .framer-1mfknxl p,
+  .framer-brtixy p,
+  p.framer-text {
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+    color: #333 !important;
+    max-width: 100% !important;
+  }
+
+  /* Monospace section counter labels ("01 / 04") */
+  .framer-djsbyi p,
+  .framer-17xe5za p,
+  .framer-194g9as p,
+  .framer-1chc5wp p {
+    font-size: 8pt !important;
+    letter-spacing: 0.1em !important;
+    color: #666 !important;
+    text-transform: uppercase !important;
+  }
+
+  /* All inline div[style*="font-size"] rich text blocks (CTA, etc.) */
+  div[style*="font-size"] {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    background-image: none !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+  }
+
+
+  /* ── Hero / Header Section ──────────────────────────────── */
+  .framer-l7lbt7-container {
+    border-bottom: 1.5pt solid #ccc;
+    padding-bottom: 16pt;
+    margin-bottom: 20pt;
+    page-break-after: avoid;
+  }
+
+  .framer-auBVu.framer-1l81kh7 {
+    height: auto !important;
+    padding: 20pt 0 !important;
+    align-items: flex-start !important;
+  }
+
+  /* RoleModel wordmark SVG */
+  .framer-auBVu svg {
+    width: 240pt !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* Force SVG strokes dark for print */
+  .framer-auBVu svg path {
+    stroke: #111 !important;
+  }
+
+
+  /* ── Scroll Panels (01–04 sections) ────────────────────── */
+  .framer-Z15Fd,
+  .framer-RWRvI {
+    min-height: unset !important;
+    height: auto !important;
+    padding: 20pt 0 !important;
+    border-top: 1pt solid #ddd;
+    page-break-inside: avoid;
+  }
+
+  /* Hide background fade overlays inside scroll panels */
+  .framer-Z15Fd .framer-y649pr,
+  .framer-RWRvI .framer-y649pr {
+    display: none !important;
+  }
+
+
+  /* ── AI Guide / Shape-Cutout CTA Banner ─────────────────── */
+  .framer-wyclha-container {
+    page-break-inside: avoid;
+    border-top: 1pt solid #ddd;
+  }
+
+  .framer-wyclha-container .shape-cutout-card {
+    border: 1.5pt solid #333 !important;
+    padding: 16pt !important;
+    page-break-inside: avoid;
+  }
+
+  /* Show only the text content block inside the card */
+  .framer-wyclha-container .shape-cutout-card .content {
+    position: static !important;
+    z-index: auto !important;
+    padding: 0 !important;
+  }
+
+  /* Download / CTA buttons inside AI guide card — show as underlined text */
+  .framer-wyclha-container a[role="button"],
+  .framer-wyclha-container a[href] {
+    display: inline !important;
+    text-decoration: underline !important;
+    color: #111 !important;
+    font-weight: 600 !important;
+    margin-right: 12pt;
+  }
+
+
+  /* ── Approach / Video Section ───────────────────────────── */
+  .framer-19nd0uv-container {
+    page-break-inside: avoid;
+    border-top: 1pt solid #ddd;
+  }
+
+  .framer-d05kF {
+    padding: 16pt 0 !important;
+    border-top: 1pt solid #ddd;
+  }
+
+
+  /* ── Testimonial Section ────────────────────────────────── */
+  .framer-74c9d5 {
+    page-break-inside: avoid;
+    border-top: 1pt solid #ddd;
+  }
+
+  .framer-q9qg6y-container {
+    page-break-inside: avoid;
+  }
+
+  /* Make the testimonial card readable without background image */
+  .testimonial {
+    border: 1.5pt solid #ccc !important;
+    padding: 16pt !important;
+    margin: 12pt 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .testimonial .content {
+    position: static !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  .testimonial h3 {
+    font-size: 14pt !important;
+    font-weight: 700 !important;
+    color: #111 !important;
+    margin-bottom: 8pt !important;
+    page-break-after: avoid;
+  }
+
+  .testimonial blockquote {
+    font-size: 10pt !important;
+    line-height: 1.6 !important;
+    color: #333 !important;
+    border-left: 3pt solid #aaa !important;
+    padding-left: 10pt !important;
+    margin: 10pt 0 !important;
+    font-style: italic;
+  }
+
+
+  /* ── Company Stats ──────────────────────────────────────── */
+  .framer-O2xTs,
+  .framer-96qg6q-container {
+    padding: 16pt 0 !important;
+    border-top: 1pt solid #ddd;
+    page-break-inside: avoid;
+  }
+
+  /* "ROLEMODEL COMPANY HIGHLIGHTS" label */
+  .framer-sxlkdm p {
+    font-size: 8pt !important;
+    letter-spacing: 0.12em !important;
+    color: #555 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 12pt;
+  }
+
+  /* Big numbers (28, 20+, 45+, 0) */
+  .framer-1accifx .framer-1mfkaj6 p,
+  .framer-1b09noc .framer-1gfwxms p,
+  .framer-1s3lz0j .framer-pjhfn2 p,
+  .framer-1yvtfgv .framer-1yalnio p {
+    font-size: 36pt !important;
+    font-weight: 700 !important;
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    background: none !important;
+    line-height: 1.1 !important;
+  }
+
+  /* Stat labels */
+  .framer-nh9unq p,
+  .framer-1urquao p,
+  .framer-1sve7ie p,
+  .framer-1aasifa p {
+    font-size: 9pt !important;
+    color: #555 !important;
+  }
+
+  /* Separator lines between stat number and label */
+  .framer-2nqog3,
+  .framer-uqlcfh,
+  .framer-1r58lzt,
+  .framer-qz1xiz,
+  .framer-qwwja3,
+  .framer-16mw826,
+  .framer-1t6wjx3 {
+    background-color: #ccc !important;
+    height: 1px !important;
+    margin: 4pt 0 !important;
+  }
+
+
+  /* ── "Ready for software…" CTA Banner ───────────────────── */
+  .framer-1o1vzbj-container > div {
+    border: 1.5pt solid #333 !important;
+    padding: 16pt !important;
+    page-break-inside: avoid;
+  }
+
+  .framer-1o1vzbj-container div[style*="font-size"] {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    background-image: none !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+  }
+
+
+  /* ── Buttons → underlined plain text ────────────────────── */
+  a[role="button"],
+  button {
+    display: inline !important;
+    border: none !important;
+    background: none !important;
+    color: #111 !important;
+    padding: 0 !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+    font-size: 10pt !important;
+  }
+
+  /* Hide the ripple/hover-overlay div inside every button */
+  a[role="button"] > div:first-child,
+  button > div:first-child {
+    display: none !important;
+  }
+
+
+  /* ── Links ──────────────────────────────────────────────── */
+  a {
+    color: #111 !important;
+    text-decoration: underline !important;
+  }
+
+  /* Append full URL after external links */
+  a[href^="http"]::after,
+  a[href^="https"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #666 !important;
+    font-weight: normal;
+    word-break: break-all;
+  }
+
+  /* Suppress URL echoing for buttons, nav, and footer links */
+  a[role="button"]::after,
+  .framer-34jpd3-container a::after,
+  .framer-FgykB a::after {
+    content: none !important;
+  }
+
+
+  /* ── Footer ─────────────────────────────────────────────── */
+  .framer-34jpd3-container,
+  .framer-FgykB {
+    border-top: 1.5pt solid #333 !important;
+    padding-top: 16pt !important;
+    margin-top: 20pt !important;
+  }
+
+  /* Footer section heading labels */
+  .framer-FgykB .framer-1jihp68 p,
+  .framer-FgykB .framer-ui83uk p,
+  .framer-FgykB .framer-1f55632 p {
+    font-size: 8pt !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+    color: #555 !important;
+    margin-bottom: 6pt !important;
+  }
+
+  /* Footer nav link text */
+  .framer-FgykB .framer-lmlza7 p {
+    font-size: 9pt !important;
+    color: #333 !important;
+    line-height: 1.7 !important;
+  }
+
+  /* Footer logo */
+  .framer-16qvwbe img {
+    max-width: 140pt !important;
+    height: auto !important;
+  }
+
+  /* Contact address / phone / email */
+  .framer-z81epq p,
+  .framer-1kjh1v6 p,
+  .framer-1bmzaxe p {
+    font-size: 9pt !important;
+    color: #333 !important;
+    line-height: 1.7 !important;
+  }
+
+
+  /* ── Page Breaks ────────────────────────────────────────── */
+  .framer-l7lbt7-container,
+  .framer-Z15Fd,
+  .framer-RWRvI,
+  .framer-d05kF,
+  .framer-74c9d5,
+  .framer-O2xTs,
+  .framer-FgykB {
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3, h4, h5 {
+    page-break-after: avoid;
+  }
+
+  p, blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+
+}
+/* end @media print */

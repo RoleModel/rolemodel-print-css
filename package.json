@@ -1,0 +1,15 @@
+{
+  "name": "rolemodel-print-css",
+  "version": "1.0.0",
+  "description": "Print CSS for Rolemodelsoftware.com",
+  "license": "MIT",
+  "author": "RoleModel Software",
+  "type": "commonjs",
+  "main": "print.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "printed": "^0.18.6"
+  }
+}
