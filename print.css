@@ -46,6 +46,11 @@
 
   /* ── Hide Entirely ──────────────────────────────────────── */
 
+  .framer-Bftao, .framer-11v9qyo {
+    display: none !important;
+  }
+
+
   /* Navigation (fixed top bar + all variants) */
   .framer-m1hrbc-container,
   .framer-c6hwu,
@@ -237,6 +242,11 @@
 
 
   /* ── Layout: full-width, static, auto-height ────────────── */
+  /* NOTE: deliberately does NOT set `display` — doing so would
+     override the earlier `display: none` hide rules (same
+     specificity, later in the file) and resurrect the navbar,
+     overlays, etc. It would also flatten Framer's flex/grid
+     layouts that we want to keep. */
   .framer-Bftao,
   .framer-KDyd1,
   .framer-auBVu,
@@ -254,7 +264,6 @@
     transform: none !important;
     will-change: auto !important;
     position: static !important;
-    display: block !important;
     height: auto !important;
     min-height: unset !important;
   }
