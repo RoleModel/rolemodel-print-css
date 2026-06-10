@@ -189,10 +189,14 @@
     display: none !important;
   }
 
-  /* Hide all SSR duplicate breakpoint variants after the first */
-  .ssr-variant + .ssr-variant {
-    display: none !important;
-  }
+  /* NOTE: do NOT add `.ssr-variant + .ssr-variant { display:none }`.
+     Framer's own hidden-* classes are mutually exclusive
+     media-query ranges (max-809 / 810-959 / 960-1199 /
+     1200-1599 / 1600+), so exactly ONE breakpoint variant is
+     visible at any width — including the print page width
+     (~690px ⇒ the phone variant). Hiding "duplicate" siblings
+     ourselves hid the one variant Framer keeps, blanking the
+     whole page. */
 
   /* Stat decorative SVG tick marks */
   .framer-5ma6wt,
