@@ -497,11 +497,11 @@
   /* ── AI Guide / Shape-Cutout CTA Banner ─────────────────── */
   .framer-wyclha-container {
     page-break-inside: avoid;
-    border-top: 1pt solid #ddd;
+    border-top: none !important;
   }
 
   .framer-wyclha-container .shape-cutout-card {
-    border: 1.5pt solid #333 !important;
+    border: none!important;
     padding: 16pt !important;
     page-break-inside: avoid;
   }
