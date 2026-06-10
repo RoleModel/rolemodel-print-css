@@ -579,8 +579,36 @@
     font-style: italic;
   }
 
-  div[data-vimeo-player-active="false"] {
-    max-width: 800px!important;
+  /* ── Vimeo players (approach diagram, testimonials, etc.) ──
+     The approach diagram is an animated Vimeo sequence; video
+     frames can't print. Collapse each player into a slim
+     labeled placeholder so the surrounding text reads cleanly. */
+  div[data-vimeo-player-active] {
+    width: 100% !important;
+    max-width: 800px !important;
+    height: auto !important;
+    min-height: unset !important;
+    background: #f2f2f2 !important;
+    border-radius: 4pt !important;
+    padding: 8pt 10pt !important;
+    overflow: hidden !important;
+    page-break-inside: avoid;
+  }
+
+  /* Kill the player chrome: play button, time readout, controls */
+  div[data-vimeo-player-active] > div,
+  div[data-vimeo-player-active] button {
+    display: none !important;
+  }
+
+  /* Printable label in place of the video */
+  div[data-vimeo-player-active]::before {
+    content: "\25B6  Animated diagram \2014 watch online at rolemodelsoftware.com/approach";
+    display: block;
+    font-size: 7.5pt !important;
+    line-height: 1.4 !important;
+    color: #555 !important;
+    letter-spacing: 0.02em;
   }
 
 
@@ -803,6 +831,34 @@
   /* Yellow underline accent bar under card titles */
   .framer-9hsEr .framer-1pgh88i {
     display: none !important;
+  }
+
+
+  /* ── /approach ──────────────────────────────────────────── */
+  /* Rotating circular "Let's Talk" badge — decorative */
+  .framer-vu4yoc-container {
+    display: none !important;
+  }
+
+  /* Approach sections: text column + diagram player side by
+     side on screen; stack them for print */
+  .framer-mu68uw,
+  .framer-1sq4t9w {
+    display: block !important;
+  }
+
+  /* Craftsman requirement cards ("3 Cards") — 3-up grid */
+  .framer-PGoR6 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10pt !important;
+    page-break-inside: avoid;
+  }
+
+  /* Keep each card's header with its content */
+  .framer-15qd6jd,
+  .framer-1vixhmn {
+    page-break-inside: avoid;
   }
 
 
