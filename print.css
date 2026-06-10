@@ -27,6 +27,8 @@
     color: #111 !important;
     box-shadow: none !important;
     text-shadow: none !important;
+    border: none !important;
+    outline: none !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -304,7 +306,6 @@
     justify-content: space-between !important;
     flex-wrap: wrap !important;
     gap: 6pt !important;
-    border-top: 1pt solid #ddd !important;
     padding-top: 8pt !important;
     margin-top: 12pt !important;
   }
@@ -452,7 +453,6 @@
 
   /* ── Hero / Header Section ──────────────────────────────── */
   .framer-l7lbt7-container {
-    border-bottom: 1.5pt solid #ccc;
     padding-bottom: 16pt;
     margin-bottom: 20pt;
     page-break-after: avoid;
@@ -483,7 +483,6 @@
     min-height: unset !important;
     height: auto !important;
     padding: 20pt 0 !important;
-    border-top: 1pt solid #ddd;
     page-break-inside: avoid;
   }
 
@@ -531,12 +530,10 @@
   /* ── Approach / Video Section ───────────────────────────── */
   .framer-19nd0uv-container {
     page-break-inside: avoid;
-    border-top: 1pt solid #ddd;
   }
 
   .framer-d05kF {
     padding: 16pt 0 !important;
-    border-top: 1pt solid #ddd;
   }
 
 
@@ -591,8 +588,16 @@
   .framer-O2xTs,
   .framer-96qg6q-container {
     padding: 16pt 0 !important;
-    border-top: 1pt solid #ddd;
     page-break-inside: avoid;
+  }
+
+  /* Stat cards — the one allowed border */
+  .framer-1accifx,
+  .framer-1b09noc,
+  .framer-1s3lz0j,
+  .framer-1yvtfgv {
+    border: 0.75pt solid #ccc !important;
+    padding: 10pt !important;
   }
 
   /* "ROLEMODEL COMPANY HIGHLIGHTS" label — small */
@@ -642,7 +647,6 @@
 
   /* ── "Ready for software…" CTA Banner ───────────────────── */
   .framer-1o1vzbj-container > div {
-    border: 1.5pt solid #333 !important;
     padding: 16pt !important;
     page-break-inside: avoid;
   }
@@ -703,7 +707,6 @@
   /* ── Footer ─────────────────────────────────────────────── */
   .framer-34jpd3-container,
   .framer-FgykB {
-    border-top: 1.5pt solid #333 !important;
     padding-top: 16pt !important;
     margin-top: 20pt !important;
   }
@@ -740,6 +743,80 @@
     font-size: 7.5pt !important;
     color: #333 !important;
     line-height: 1.5 !important;
+  }
+
+
+  /* ════════════════════════════════════════════════════════
+     SITE-WIDE PAGE RULES
+     (from crawl of /about /approach /services /portfolio
+      /careers /blog /consultation /case-studies/*)
+     ════════════════════════════════════════════════════════ */
+
+  /* Appear/scroll animations — force content visible.
+     Framer leaves below-the-fold elements at opacity:0 until
+     scrolled into view, which prints as blank space. */
+  [data-framer-appear-id],
+  [class*="framer-"][style*="opacity:0"],
+  [class*="framer-"][style*="opacity: 0"] {
+    opacity: 1 !important;
+  }
+
+  /* Images: never overflow the page, keep aspect ratio */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+  }
+
+  /* Floating fixed CTA button, bottom-right
+     (portfolio, blog, case-study pages) */
+  .framer-1yoqtlw {
+    display: none !important;
+  }
+
+
+  /* ── /consultation ──────────────────────────────────────── */
+  /* Interactive form + reCAPTCHA are useless on paper;
+     the page's contact details still print. */
+  .framer-161wdtb,
+  form[data-framer-name="Form"],
+  .g-recaptcha,
+  [name="recaptcha"] {
+    display: none !important;
+  }
+
+
+  /* ── /portfolio ─────────────────────────────────────────── */
+  /* Case-study card grid: keep 2-up so screenshots stay a
+     reasonable print size */
+  .framer-9hsEr .framer-19bdp74 {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12pt !important;
+  }
+
+  /* Each card: keep image with its caption */
+  .framer-9hsEr .framer-5xr3ef {
+    page-break-inside: avoid;
+  }
+
+  /* Yellow underline accent bar under card titles */
+  .framer-9hsEr .framer-1pgh88i {
+    display: none !important;
+  }
+
+
+  /* ── /case-studies/* ────────────────────────────────────── */
+  /* Divider rules (no borders/lines in print) */
+  [data-framer-name="Divider"] {
+    display: none !important;
+  }
+
+  /* Browser-mockup screenshot frames ("No Chrome" variants):
+     drop the dark chrome styling, keep the screenshot */
+  [data-framer-name="No Chrome"] {
+    background: transparent !important;
+    padding: 0 !important;
   }
 
 
