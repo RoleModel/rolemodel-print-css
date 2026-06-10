@@ -543,7 +543,7 @@
   /* ── Testimonial Section ────────────────────────────────── */
   .framer-74c9d5 {
     page-break-inside: avoid;
-    border-top: 1pt solid #ddd;
+    border: none !important;
   }
 
   .framer-q9qg6y-container {
@@ -552,7 +552,7 @@
 
   /* Make the testimonial card readable without background image */
   .testimonial {
-    border: 1.5pt solid #ccc !important;
+    border: none !important;
     padding: 16pt !important;
     margin: 12pt 0 !important;
     page-break-inside: avoid;
@@ -576,10 +576,14 @@
     font-size: 9pt !important;
     line-height: 1.45 !important;
     color: #333 !important;
-    border-left: 3pt solid #aaa !important;
+    border-left: 3pt solid #2988fd !important;
     padding-left: 10pt !important;
     margin: 10pt 0 !important;
     font-style: italic;
+  }
+
+  div[data-vimeo-player-active="false"] {
+    max-width: 800px!important;
   }
 
 
