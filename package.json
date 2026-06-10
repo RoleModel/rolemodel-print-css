@@ -8,8 +8,5 @@
   "main": "print.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "printed": "^0.18.6"
   }
 }
