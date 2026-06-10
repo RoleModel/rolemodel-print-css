@@ -587,6 +587,7 @@
     width: 100% !important;
     max-width: 800px !important;
     height: auto !important;
+    aspect-ratio: 16/9 !important;
     min-height: unset !important;
     background: #f2f2f2 !important;
     border-radius: 4pt !important;
